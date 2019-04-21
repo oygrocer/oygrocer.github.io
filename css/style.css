@@ -1,0 +1,140 @@
+html {
+  background-image: url('../images/background.jpg');
+  background-repeat: repeat-y;
+  font-family: 'Loved by the King', cursive;
+  padding: 0 0 25px 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h3 {
+  color: #9dc84f;
+  font-weight: 400;
+}
+
+div#header {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+img#logo {
+  align-self: center;
+  display: block;
+  margin: 10px 0 0 0;
+}
+
+div#header > div {
+  max-width: 225px;
+  min-width: 150px;
+  width: 33%;
+  margin: 10px 30px;
+}
+
+div#header p {
+  color: #a46831;
+  font-size: 1.35em;
+  margin: 0;
+  padding: 0;
+}
+
+div#header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#lhs {
+  text-align: right;
+}
+
+#rhs {
+  text-align: left;
+}
+
+div#header > h1 {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0;
+  background-color: #a46831;
+}
+
+div#body {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  flex-wrap: wrap;
+}
+
+div#body > div {
+  max-width: 800px;
+}
+
+img#shelves {
+  width: 800px;
+}
+
+div.feature {
+  background-color: #a46831;
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 15px;
+}
+
+div.img img {
+  width: 250px;
+  height: 175px;
+}
+
+@media screen and (max-width: 500px) {
+  div.feature {
+    flex-wrap: wrap;
+    margin: 25px 25px 0 25px;
+  }
+
+  .feature div.img {
+    flex: 1;
+    flex-basis: 100%;
+  }
+
+  div.img img {
+    align-self: center;
+    display: block;
+    margin: auto;
+  }
+}
+
+.desc {
+  flex: 2;
+  padding: 10px;
+  margin: 5px 25px 0 25px;
+}
+
+.desc h3 {
+  text-decoration: underline;
+  font-size: 1.4em;
+}
+
+.desc p {
+  color: white;
+  font-size: 1.1em;
+}
+
+iframe {
+  margin: 20px 0;
+  max-width: 800px;
+  width: 100%;
+  height: 325px;
+}
